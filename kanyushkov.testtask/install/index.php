@@ -1,8 +1,10 @@
 <?php
 
-use Bitrix\Main\Config\Option;
 use Bitrix\Main\ModuleManager;
-use NK;
+use Bitrix\Main\Config\Option;
+use Bitrix\Main\Localization\Loc;
+use Bitrix\Main\Application;
+use Bitrix\Main\Loader;
 
 Loc::loadMessages(__FILE__);
 
@@ -37,13 +39,12 @@ class kanyushkov_nikolay extends CModule {
 
     function DoInstall() {
         self::InstallFiles();
-        ModuleManager::RegisterModule(self::MODULE_ID);
+        ModuleManager::registerModule($this->MODULE_ID);
     }
 
     function DoUninstall() {
-        global $APPLICATION;
         self::UnInstallFiles();
-        ModuleManager::UnRegisterModule(self::MODULE_ID);
+        ModuleManager::UnRegisterModule($this->MODULE_ID);
     }
 
     function InstallFiles() {
