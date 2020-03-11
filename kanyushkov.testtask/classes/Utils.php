@@ -15,7 +15,7 @@ class Utils {
 
     public static function dumpCallStack($full = false) {
         $stacktrace = debug_backtrace();
-        unset($stacktrace[0]); // hide dumpCallStack call
+        unset($stacktrace[0]);
         if ($full) {
             Utils::dump($stacktrace);
             return;

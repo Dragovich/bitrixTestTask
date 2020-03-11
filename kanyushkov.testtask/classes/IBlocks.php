@@ -34,28 +34,24 @@ class IBlocks {
         return array_keys(self::getIBlocks());
     }
 
-    public static function getIBlockName($iBlockId) {
-        return self::getIBlocks()[$iBlockId];
-    }
+    public static function getIBlockElementsInfo($iBlockId = null) {
+        $iBlocksElements = [];
 
-    public static function getIBlockElements() {
-        $elements = [];
+        $filter['IBLOCK_ID'] = self::getIBlocksId();
+
+        if (!is_null($iBlockId)) {
+            $filter['ID'] = $iBlockId;
+        }
 
         $dbElements = \CIBlockElement::GetList(
             ['SORT' => 'ASC'],
-            [
-                'IBLOCK_ID' => self::getIBlocksId(),
-            ]
+            $filter
         );
 
         while ($obElement = $dbElements->GetNextElement()) {
             $el = $obElement->GetFields();
-            $el["PROPERTIES"] = $obElement->GetProperties();
-            $iBlocksElements[$el["ID"]]["ID"] = $el["ID"];
-            $iBlocksElements[$el["ID"]]["NAME"] = $el["NAME"];
-            $iBlocksElements[$el["ID"]]["PREVIEW_TEXT"] = $el["PREVIEW_TEXT"];
-            $iBlocksElements[$el["ID"]]["DETAIL_TEXT"] = $el["DETAIL_TEXT"];
-            $iBlocksElements[$el["ID"]]["DETAIL_PICTURE"] = $el["DETAIL_PICTURE"];
+            $order = new Order($el["ID"], $el["NAME"], $el["PREVIEW_TEXT"], $el["DETAIL_TEXT"], $el["DETAIL_PICTURE"]);
+            $iBlocksElements[$el["ID"]] = $order;
         }
 
         return $iBlocksElements;
