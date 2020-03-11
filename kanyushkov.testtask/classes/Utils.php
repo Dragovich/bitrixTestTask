@@ -1,6 +1,6 @@
 <?php
 
-namespace NK;
+use NK;
 
 class Utils {
     public static function dump(...$vars) {
