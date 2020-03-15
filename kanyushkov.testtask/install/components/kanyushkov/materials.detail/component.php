@@ -10,14 +10,9 @@ Loader::includeModule('kanyushkov.testtask');
 
 $complex = $parentComponentName ? true : false;
 
-$materialListLink = '';
-if ($complex) {
-    $materialListLink = $arParams['PATH_TO_LIST'];
-}
-
 // From the component parameters
 $materialId = (int)$arParams['MATERIAL_ID'];
 
-$arResult = IBlocks::getIBlockElementsInfo($materialId);
-
+$arResult = IBlocks::getIBlockElementsInfo($materialId)[$materialId];
+$arResult->setDetailUrl($arParams['PATH_TO_LIST']);
 $this->IncludeComponentTemplate();

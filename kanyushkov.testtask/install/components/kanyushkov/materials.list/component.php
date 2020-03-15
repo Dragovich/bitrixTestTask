@@ -11,12 +11,18 @@ Loader::includeModule('kanyushkov.testtask');
 
 $complex = $parentComponentName ? true : false;
 
-$materialListLink = '';
-if ($complex) {
-    $materialListLink = $arParams['PATH_TO_LIST'];
-}
-
 // Append link to the detail view
 $arResult = IBlocks::getIBlockElementsInfo($materialId);
+
+if ($complex) {
+    foreach ($arResult as $material) {
+        $url = str_replace(
+            '#MATERIAL_ID#',
+            $material->getId(),
+            $arParams['PATH_TO_DETAIL']
+        );
+        $arResult[$material->getId()]->setDetailUrl($url);
+    }
+}
 
 $this->IncludeComponentTemplate();

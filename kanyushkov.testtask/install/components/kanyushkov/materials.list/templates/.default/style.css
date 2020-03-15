@@ -1,0 +1,22 @@
+.material-list {
+    width: 100%;
+}
+
+.material-list .material {
+    display: flex;
+    flex-direction: column;
+    border: 4px double black;
+}
+
+.material-list .name {
+
+}
+
+.material-list .description {
+
+}
+
+.material-list img {
+    height: 128px;
+    width: 128px;
+}

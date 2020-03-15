@@ -21,7 +21,7 @@ $arComponentParameters = array(
             ),
             'detail' => array(
                 'NAME' => Loc::getMessage('NK_COMP_TEST_SEF_MODE_DETAIL_NAME'),
-                'DEFAULT' => '#MATERIALID_ID#/',
+                'DEFAULT' => '#MATERIAL_ID#/',
                 'VARIABLES' => array('MATERIAL_ID'),
             ),
         ),

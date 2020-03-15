@@ -8,6 +8,7 @@ class Order {
     protected $previewText = null;
     protected $detailText = null;
     protected $detailPicture = null;
+    protected $detailUrl = "";
 
     function __construct($id = null, $name = null, $previewText = null, $detailText = null, $detailPicture = null) {
         $this->id = $id;
@@ -59,5 +60,13 @@ class Order {
 
     function setDetailPicture($detailPicture) {
         $this->detailPicture = $detailPicture;
+    }
+
+    function getDetailUrl() {
+        return $this->detailUrl;
+    }
+
+    function setDetailUrl($detailUrl) {
+        $this->detailUrl = $detailUrl;
     }
 }

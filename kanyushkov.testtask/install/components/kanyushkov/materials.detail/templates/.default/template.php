@@ -11,12 +11,17 @@ use Bitrix\Main\Localization\Loc;
 
 <a id="reload_material_detail_comp" href="<?= $_SERVER["REQUEST_URI"] ?>"></a>
 
-asdasasads
 <div class="material-detail">
-    <?
-    var_dump($arParams);
-    var_dump($arResult);
-    ?>
+        <div class="name"><?= $arResult->getName() ?></div>
+        <div class="description"><?= $arResult->getDetailText() ?></div>
+        <div class="img">
+            <img src="<?= $arResult->getDetailPicture() ?>" alt="materialImage"/>
+        </div>
+        <div class="redirect"><a href="<?= $arResult->getDetailUrl() ?>">К листу</a></div>
 </div>
 
-
+<script>
+    setTimeout(function () {
+        document.getElementById('reload_material_detail_comp').click();
+    }, 1000 * 60);
+</script>
