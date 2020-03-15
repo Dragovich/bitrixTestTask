@@ -18,7 +18,7 @@ use Bitrix\Main\Localization\Loc;
             <div class="img">
                 <img src="<?= $material->getDetailPicture() ?>" alt="materialImage"/>
             </div>
-            <div class="redirect"><a href="<?= $material->getDetailUrl() ?>">Подробнее</a></div>
+            <div class="redirect"><a href="<?= $material->getUrl() ?>">Подробнее</a></div>
         </div>
         <?
     }

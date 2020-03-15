@@ -14,5 +14,5 @@ $complex = $parentComponentName ? true : false;
 $materialId = (int)$arParams['MATERIAL_ID'];
 
 $arResult = IBlocks::getIBlockElementsInfo($materialId)[$materialId];
-$arResult->setDetailUrl($arParams['PATH_TO_LIST']);
+$arResult->setUrl($arParams['PATH_TO_LIST']);
 $this->IncludeComponentTemplate();

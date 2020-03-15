@@ -21,7 +21,7 @@ if ($complex) {
             $material->getId(),
             $arParams['PATH_TO_DETAIL']
         );
-        $arResult[$material->getId()]->setDetailUrl($url);
+        $arResult[$material->getId()]->setUrl($url);
     }
 }
 
