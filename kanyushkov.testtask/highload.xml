@@ -1,187 +1,187 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <hiblock>
-	<hiblock>
-		<id>1</id>
-		<name>NKCOMMENTS</name>
-		<table_name>nk_comments</table_name>
-	</hiblock>
-	<langs>
-		<lang>
-			<id>1</id>
-			<lid>ru</lid>
-			<name>Комментарии</name>
-		</lang>
-	</langs>
-	<fields>
-		<field>
-			<id>1</id>
-			<entity_id>HLBLOCK_1</entity_id>
-			<field_name>UF_IBLOCK_ID</field_name>
-			<user_type_id>iblock_element</user_type_id>
-			<xml_id>IBLOCK_ID</xml_id>
-			<sort>100</sort>
-			<multiple>N</multiple>
-			<mandatory>Y</mandatory>
-			<show_filter>I</show_filter>
-			<show_in_list>Y</show_in_list>
-			<edit_in_list>Y</edit_in_list>
-			<is_searchable>Y</is_searchable>
-			<settings>
-				<display>LIST</display>
-				<list_height>5</list_height>
-				<iblock_id>2</iblock_id>
-				<default_value />
-				<active_filter>N</active_filter>
-			</settings>
-			<edit_form_label>
-				<en />
-				<ru>ID элемента инфоблока</ru>
-			</edit_form_label>
-			<list_column_label>
-				<en />
-				<ru>ID элемента инфоблока</ru>
-			</list_column_label>
-			<list_filter_label>
-				<en />
-				<ru>ID элемента инфоблока</ru>
-			</list_filter_label>
-			<error_message>
-				<en />
-				<ru />
-			</error_message>
-			<help_message>
-				<en />
-				<ru />
-			</help_message>
-			<base_type>int</base_type>
-		</field>
-		<field>
-			<id>2</id>
-			<entity_id>HLBLOCK_1</entity_id>
-			<field_name>UF_USER_ID</field_name>
-			<user_type_id>integer</user_type_id>
-			<xml_id>USER_ID</xml_id>
-			<sort>200</sort>
-			<multiple>N</multiple>
-			<mandatory>Y</mandatory>
-			<show_filter>I</show_filter>
-			<show_in_list>Y</show_in_list>
-			<edit_in_list>Y</edit_in_list>
-			<is_searchable>Y</is_searchable>
-			<settings>
-				<size>20</size>
-				<min_value>0</min_value>
-				<max_value>0</max_value>
-				<default_value />
-			</settings>
-			<edit_form_label>
-				<en />
-				<ru>ID пользователя</ru>
-			</edit_form_label>
-			<list_column_label>
-				<en />
-				<ru>ID пользователя</ru>
-			</list_column_label>
-			<list_filter_label>
-				<en />
-				<ru>ID пользователя</ru>
-			</list_filter_label>
-			<error_message>
-				<en />
-				<ru />
-			</error_message>
-			<help_message>
-				<en />
-				<ru />
-			</help_message>
-			<base_type>int</base_type>
-		</field>
-		<field>
-			<id>3</id>
-			<entity_id>HLBLOCK_1</entity_id>
-			<field_name>UF_COMMENT</field_name>
-			<user_type_id>string</user_type_id>
-			<xml_id>COMMENT</xml_id>
-			<sort>300</sort>
-			<multiple>N</multiple>
-			<mandatory>N</mandatory>
-			<show_filter>S</show_filter>
-			<show_in_list>Y</show_in_list>
-			<edit_in_list>Y</edit_in_list>
-			<is_searchable>Y</is_searchable>
-			<settings>
-				<size>20</size>
-				<rows>1</rows>
-				<regexp />
-				<min_length>0</min_length>
-				<max_length>0</max_length>
-				<default_value />
-			</settings>
-			<edit_form_label>
-				<en />
-				<ru>Комментарий</ru>
-			</edit_form_label>
-			<list_column_label>
-				<en />
-				<ru>Комментарий</ru>
-			</list_column_label>
-			<list_filter_label>
-				<en />
-				<ru>Комментарий</ru>
-			</list_filter_label>
-			<error_message>
-				<en />
-				<ru />
-			</error_message>
-			<help_message>
-				<en />
-				<ru />
-			</help_message>
-			<base_type>string</base_type>
-		</field>
-		<field>
-			<id>4</id>
-			<entity_id>HLBLOCK_1</entity_id>
-			<field_name>UF_DATE</field_name>
-			<user_type_id>datetime</user_type_id>
-			<xml_id>DATE</xml_id>
-			<sort>400</sort>
-			<multiple>N</multiple>
-			<mandatory>N</mandatory>
-			<show_filter>I</show_filter>
-			<show_in_list>Y</show_in_list>
-			<edit_in_list>Y</edit_in_list>
-			<is_searchable>Y</is_searchable>
-			<settings>
-				<default_value>
-					<type>NOW</type>
-					<value />
-				</default_value>
-				<use_second>Y</use_second>
-			</settings>
-			<edit_form_label>
-				<en />
-				<ru>Дата</ru>
-			</edit_form_label>
-			<list_column_label>
-				<en />
-				<ru>Дата</ru>
-			</list_column_label>
-			<list_filter_label>
-				<en />
-				<ru>Дата</ru>
-			</list_filter_label>
-			<error_message>
-				<en />
-				<ru />
-			</error_message>
-			<help_message>
-				<en />
-				<ru />
-			</help_message>
-			<base_type>datetime</base_type>
-		</field>
-	</fields>
-	<items>
-	</items>
+    <hiblock>
+        <id>1</id>
+        <name>NKCOMMENTS</name>
+        <table_name>nk_comments</table_name>
+    </hiblock>
+    <langs>
+        <lang>
+            <id>1</id>
+            <lid>ru</lid>
+            <name>Комментарии</name>
+        </lang>
+    </langs>
+    <fields>
+        <field>
+            <id>1</id>
+            <entity_id>HLBLOCK_1</entity_id>
+            <field_name>UF_IBLOCK_ID</field_name>
+            <user_type_id>iblock_element</user_type_id>
+            <xml_id>IBLOCK_ID</xml_id>
+            <sort>100</sort>
+            <multiple>N</multiple>
+            <mandatory>Y</mandatory>
+            <show_filter>I</show_filter>
+            <show_in_list>Y</show_in_list>
+            <edit_in_list>Y</edit_in_list>
+            <is_searchable>Y</is_searchable>
+            <settings>
+                <display>LIST</display>
+                <list_height>5</list_height>
+                <iblock_id>2</iblock_id>
+                <default_value/>
+                <active_filter>N</active_filter>
+            </settings>
+            <edit_form_label>
+                <en/>
+                <ru>ID элемента инфоблока</ru>
+            </edit_form_label>
+            <list_column_label>
+                <en/>
+                <ru>ID элемента инфоблока</ru>
+            </list_column_label>
+            <list_filter_label>
+                <en/>
+                <ru>ID элемента инфоблока</ru>
+            </list_filter_label>
+            <error_message>
+                <en/>
+                <ru/>
+            </error_message>
+            <help_message>
+                <en/>
+                <ru/>
+            </help_message>
+            <base_type>int</base_type>
+        </field>
+        <field>
+            <id>2</id>
+            <entity_id>HLBLOCK_1</entity_id>
+            <field_name>UF_USER_ID</field_name>
+            <user_type_id>integer</user_type_id>
+            <xml_id>USER_ID</xml_id>
+            <sort>200</sort>
+            <multiple>N</multiple>
+            <mandatory>Y</mandatory>
+            <show_filter>I</show_filter>
+            <show_in_list>Y</show_in_list>
+            <edit_in_list>Y</edit_in_list>
+            <is_searchable>Y</is_searchable>
+            <settings>
+                <size>20</size>
+                <min_value>0</min_value>
+                <max_value>0</max_value>
+                <default_value/>
+            </settings>
+            <edit_form_label>
+                <en/>
+                <ru>ID пользователя</ru>
+            </edit_form_label>
+            <list_column_label>
+                <en/>
+                <ru>ID пользователя</ru>
+            </list_column_label>
+            <list_filter_label>
+                <en/>
+                <ru>ID пользователя</ru>
+            </list_filter_label>
+            <error_message>
+                <en/>
+                <ru/>
+            </error_message>
+            <help_message>
+                <en/>
+                <ru/>
+            </help_message>
+            <base_type>int</base_type>
+        </field>
+        <field>
+            <id>3</id>
+            <entity_id>HLBLOCK_1</entity_id>
+            <field_name>UF_COMMENT</field_name>
+            <user_type_id>string</user_type_id>
+            <xml_id>COMMENT</xml_id>
+            <sort>300</sort>
+            <multiple>N</multiple>
+            <mandatory>N</mandatory>
+            <show_filter>S</show_filter>
+            <show_in_list>Y</show_in_list>
+            <edit_in_list>Y</edit_in_list>
+            <is_searchable>Y</is_searchable>
+            <settings>
+                <size>20</size>
+                <rows>1</rows>
+                <regexp/>
+                <min_length>0</min_length>
+                <max_length>0</max_length>
+                <default_value/>
+            </settings>
+            <edit_form_label>
+                <en/>
+                <ru>Комментарий</ru>
+            </edit_form_label>
+            <list_column_label>
+                <en/>
+                <ru>Комментарий</ru>
+            </list_column_label>
+            <list_filter_label>
+                <en/>
+                <ru>Комментарий</ru>
+            </list_filter_label>
+            <error_message>
+                <en/>
+                <ru/>
+            </error_message>
+            <help_message>
+                <en/>
+                <ru/>
+            </help_message>
+            <base_type>string</base_type>
+        </field>
+        <field>
+            <id>4</id>
+            <entity_id>HLBLOCK_1</entity_id>
+            <field_name>UF_DATE</field_name>
+            <user_type_id>datetime</user_type_id>
+            <xml_id>DATE</xml_id>
+            <sort>400</sort>
+            <multiple>N</multiple>
+            <mandatory>N</mandatory>
+            <show_filter>I</show_filter>
+            <show_in_list>Y</show_in_list>
+            <edit_in_list>Y</edit_in_list>
+            <is_searchable>Y</is_searchable>
+            <settings>
+                <default_value>
+                    <type>NOW</type>
+                    <value/>
+                </default_value>
+                <use_second>Y</use_second>
+            </settings>
+            <edit_form_label>
+                <en/>
+                <ru>Дата</ru>
+            </edit_form_label>
+            <list_column_label>
+                <en/>
+                <ru>Дата</ru>
+            </list_column_label>
+            <list_filter_label>
+                <en/>
+                <ru>Дата</ru>
+            </list_filter_label>
+            <error_message>
+                <en/>
+                <ru/>
+            </error_message>
+            <help_message>
+                <en/>
+                <ru/>
+            </help_message>
+            <base_type>datetime</base_type>
+        </field>
+    </fields>
+    <items>
+    </items>
 </hiblock>

@@ -21,8 +21,8 @@ class Utils {
             return;
         }
         $res = '';
-        foreach($stacktrace as $n => $node) {
-            $res .= "$n. ".basename($node['file']) .": " .$node['function'] ." (" .$node['line'].")\n";
+        foreach ($stacktrace as $n => $node) {
+            $res .= "$n. " . basename($node['file']) . ": " . $node['function'] . " (" . $node['line'] . ")\n";
         }
         Utils::dump($res);
     }

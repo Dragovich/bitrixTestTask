@@ -50,7 +50,8 @@ class IBlocks {
 
         while ($obElement = $dbElements->GetNextElement()) {
             $el = $obElement->GetFields();
-            $order = new Order($el["ID"], $el["NAME"], $el["PREVIEW_TEXT"], $el["DETAIL_TEXT"], $el["DETAIL_PICTURE"]);
+            $pictureUrl = CFile::GetPath((int)$el["DETAIL_PICTURE"]);
+            $order = new Order($el["ID"], $el["NAME"], $el["PREVIEW_TEXT"], $el["DETAIL_TEXT"], $pictureUrl);
             $iBlocksElements[$el["ID"]] = $order;
         }
 

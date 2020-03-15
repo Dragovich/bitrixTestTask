@@ -1,4 +1,5 @@
 <?php
+
 use Bitrix\Main\Localization\Loc;
 
 $arComponentDescription = array(
@@ -6,8 +7,8 @@ $arComponentDescription = array(
     'DESCRIPTION' => Loc::getMessage("NK_COMP_TEST_DESCRIPTION"),
     'PATH' => array(
         'ID' => 'NK',
-        "NAME" => Loc::getMessage("NK_COMP_TEST_NAME"),
+        "NAME" => Loc::getMessage("NK_COMP_TEST_PATH_NAME"),
     ),
     'CACHE_PATH' => 'Y',
-    'COMPLEX' => 'N'
+    'COMPLEX' => 'Y'
 );
